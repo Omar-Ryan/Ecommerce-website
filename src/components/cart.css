@@ -1,0 +1,129 @@
+.cart {
+  padding: 20px 0px;
+}
+.cart .empty-cart {
+  width: 100%;
+  text-align: center;
+}
+.cart .empty-cart h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--grey-color);
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.cart .container {
+  width: 100%;
+}
+.cart .container .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 3px solid var(--white-color);
+  height: 250px;
+  margin: 10px 15px;
+}
+.cart .container .box .img-box img {
+  width: 270px;
+  height: 100%;
+}
+.cart .container .box .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.cart .container .box .content .details {
+  padding: 5px;
+}
+.cart .container .box .content .details h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--grey-color);
+}
+.cart .container .box .content .details h3 {
+  margin-top: 10px;
+  color: var(--black-color);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.cart .container .box .content .details p {
+  margin-top: 10px;
+  color: var(--black-color);
+  text-transform: uppercase;
+}
+.cart .container .box .content .quantity {
+  display: flex;
+}
+.cart .container .box .content .quantity button {
+  height: fit-content;
+  border-radius: unset;
+}
+.cart .container .box .content .quantity input {
+  padding: 10px 20px;
+  height: 37px;
+  width: 100px;
+  background: none;
+  border: 2px solid var(--yellow-color);
+  color: var(--red-color);
+  font-size: 14px;
+  font-weight: bold;
+}
+.cart .container .box .icon {
+  position: relative;
+  top: -35%;
+  margin-right: 10px;
+}
+.cart .container .box .icon li {
+  background: var(--red-color);
+  padding: 10px 10px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cart .cart-bottom {
+  text-align: center;
+  max-width: 100%;
+}
+.cart .cart-bottom .total-price h4 {
+  font-size: 22px;
+  color: var(--red-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+/* Media */
+
+@media (max-width: 767px) {
+  .cart .container .box {
+    max-height: 200px;
+    margin: 10px 0px;
+  }
+  .cart .container .box .img-box img {
+    max-width: 200px;
+  }
+  .cart .container .box .content {
+    flex-direction: column;
+  }
+  .cart .container .box .content .details {
+    padding: 10px;
+  }
+  .cart .container .box .content .details h4 {
+    font-size: 12px;
+  }
+  .cart .container .box .content .details h3 {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  .cart .container .box .content .quantity input {
+    width: 60px;
+    font-size: 12px;
+  }
+}

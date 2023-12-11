@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+/* Start variable */
+:root {
+  --yellow-color: #fed700;
+  --red-color: #cd1e76;
+  --white-color: #f6f7f8;
+  --black-color: #232323;
+  --grey-color: #8a8a8a;
+}
+/* End variable */
+/* Start global rules*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.head-page {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--black-color);
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: var(--yellow-color);
+  color: var(--black-color);
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  line-height: 1.1;
+}
+.btn:hover {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  cursor: pointer;
+}
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+input:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
